@@ -1,0 +1,35 @@
+{
+  "name": "type-orm",
+  "version": "1.0.0",
+  "description": "node js, expressjs, typeorm, and mysql",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L src/app.ts",
+    "test": "jest"
+  },
+  "author": "Sachin Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.2",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "class-validator": "^0.14.0",
+    "express": "^4.18.2",
+    "jest": "^29.6.1",
+    "jsonwebtoken": "^9.0.1",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "typeorm": "^0.3.17",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.0.1"
+  }
+}
