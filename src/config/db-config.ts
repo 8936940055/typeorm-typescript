@@ -2,6 +2,7 @@
 import {DataSource} from 'typeorm';
 import { User } from '../entity/user';
 import { Todos } from '../entity/todos';
+require('dotenv').config();
 export const dataS = new DataSource({
     type:'mysql',
     host:'127.0.0.1',

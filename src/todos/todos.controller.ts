@@ -26,7 +26,6 @@ const getTodos = async (req: Request, res: Response) => {
 }
 
 const CreateTodo = async (req: Request, res: Response) => {
-
   try {
     console.log("req.body ::::>>", req.body)
     const { title, description, status, created_at, updated_at } = req.body;
@@ -71,9 +70,6 @@ const UpdateTodos = async (req: Request, res: Response) => {
   }
 };
 
-
-
-
 const GetTodoById = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
@@ -91,9 +87,5 @@ const GetTodoById = async (req: Request, res: Response) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
-
-
-
-
 
 export { getTodos, CreateTodo, DeleteTodo, UpdateTodos, GetTodoById }

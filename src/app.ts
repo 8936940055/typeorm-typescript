@@ -3,8 +3,9 @@ import { dataS } from "./config/db-config";
 import { router } from "./todos/todos.router";
 import { routerUser } from "./user/user.router";
 const bodyParser = require("body-parser");
+require('dotenv').config();
 const app = express();
-const port = 3006;
+const port = process.env.APP_PORT;
 
 app.use(bodyParser.json());
 app.use(
@@ -20,7 +21,7 @@ app.use(
     })
     .catch((error) => console.log(error))
   
-    app.use("",routerUser);
+    app.use("",routerUser); 
     app.use("", router);
     
 
